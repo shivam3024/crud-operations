@@ -35,7 +35,7 @@ const AllUser = () => {
   }, []);
   const getAllUser = async () => {
     let res = await getUsers();
-    setUsers(res.data);
+    setUsers(res?.data);
   };
   const deleteUserDetails = async (id) => {
     await deleteuser(id);
@@ -54,7 +54,7 @@ const AllUser = () => {
         </THead>
       </TableHead>
       <TableBody>
-        {users.map((user) => (
+        {users?.map((user) => (
           <TBody>
             <TableCell>{user._id}</TableCell>
             <TableCell>{user.name}</TableCell>

@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <Header position="static">
       <Toolbar>
-        <Tabs to="/">Code for interview</Tabs>
+        <Tabs to="/">Home page</Tabs>
         <Tabs to="/all">All User</Tabs>
         <Tabs to="/add">Add User</Tabs>
       </Toolbar>

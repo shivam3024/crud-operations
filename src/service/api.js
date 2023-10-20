@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "http://localhost:8000";
+const URL = process.env.REACT_APP_API_URL;
 export const addUser = async (data) => {
   try {
     return await axios.post(`${URL}/add`, data);
